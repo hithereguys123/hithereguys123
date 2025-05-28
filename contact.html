@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Family Donut Shop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div class="wrapper">
+    <header>
+      <div class="logo-container">
+        <img src="images/THE DONUT SHOP LOGO.jpg" alt="Family Donut Shop Logo" class="logo">
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu <span class="donut-icon">🍩</span></a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Get In Touch</h1>
+          <p>We'd love to hear from you!</p>
+        </div>
+      </section>
+
+      <section class="contact-info">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <h3>Visit Us</h3>
+              <p>123 Sweet Street<br>
+                 Donutville, CA 90210<br>
+                 United States</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <h3>Call Us</h3>
+              <p>Phone: (555) 123-DONUT<br>
+                 Text: (555) 123-4368<br>
+                 Fax: (555) 123-4369</p>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <h3>Email Us</h3>
+              <p>General: hello@familydonutshop.com<br>
+                 Orders: orders@familydonutshop.com<br>
+                 Catering: catering@familydonutshop.com</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hours-section">
+        <div class="container">
+          <h2>Store Hours</h2>
+          <div class="hours-grid">
+            <div class="hours-card">
+              <h3>Weekdays</h3>
+              <div class="hours-detail">
+                <span class="day">Monday - Friday</span>
+                <span class="time">6:00 AM - 7:00 PM</span>
+              </div>
+              <p class="note">Fresh donuts available all day!</p>
+            </div>
+            <div class="hours-card">
+              <h3>Weekends</h3>
+              <div class="hours-detail">
+                <span class="day">Saturday - Sunday</span>
+                <span class="time">7:00 AM - 8:00 PM</span>
+              </div>
+              <p class="note">Weekend specials available!</p>
+            </div>
+            <div class="hours-card holiday">
+              <h3>Holidays</h3>
+              <div class="hours-detail">
+                <span class="day">Special Hours</span>
+                <span class="time">Check our socials!</span>
+              </div>
+              <p class="note">We're open most holidays with special treats!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <div class="container">
+          <div class="form-container">
+            <div class="form-intro">
+              <h2>Send Us a Message</h2>
+              <p>Have a question, suggestion, or want to place a special order? We'd love to hear from you!</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Please select...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="order">Special Order</option>
+                  <option value="catering">Catering Request</option>
+                  <option value="feedback">Feedback</option>
+                  <option value="complaint">Complaint</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" id="newsletter" name="newsletter">
+                  <span class="checkmark"></span>
+                  Subscribe to our newsletter for special offers and new donut announcements!
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">Send Message 📧</button>
+            </form>
+
+            <div class="form-success" id="formSuccess" style="display: none;">
+              <div class="success-icon">✅</div>
+              <h3>Message Sent!</h3>
+              <p>Thank you for reaching out! We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="container">
+          <h2>Find Us</h2>
+          <div class="map-container">
+            <div class="map-placeholder">
+              <div class="map-icon">🗺️</div>
+              <h3>Interactive Map</h3>
+              <p>123 Sweet Street, Donutville, CA 90210</p>
+              <div class="map-buttons">
+                <a href="https://maps.google.com/?q=donut+shop" target="_blank" class="btn btn-outline">Open in Google Maps</a>
+                <a href="tel:5551234368" class="btn btn-secondary">Call for Directions</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="location-features">
+            <div class="feature">
+              <span class="feature-icon">🚗</span>
+              <span>Free Parking Available</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">♿</span>
+              <span>Wheelchair Accessible</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">🚌</span>
+              <span>Bus Stop Nearby</span>
+            </div>
+            <div class="feature">
+              <span class="feature-icon">☕</span>
+              <span>Dine-in Seating</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Family Donut Shop</h4>
+          <p>Making sweet memories since 1993</p>
+        </div>
+        <div class="footer-section">
+          <h4>Hours</h4>
+          <p>Mon-Fri: 6:00 AM - 7:00 PM<br>
+             Sat-Sun: 7:00 AM - 8:00 PM</p>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p>📞 (555) 123-DONUT<br>
+             📧 hello@familydonutshop.com</p>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐤</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Family Donut Shop. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
